@@ -56,3 +56,17 @@ for people in peoples:
 
 
 
+print ('=' * 50)
+
+
+def message(a,b,c){
+
+  print (f'hello {a}')
+  print (f'hello {b}')
+  print (f'hello {c}')
+
+}
+
+print (f'{message(a)}')
+print (f'{message(a)}')
+print (f'{message(a)}')
