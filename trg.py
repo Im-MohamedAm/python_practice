@@ -92,3 +92,104 @@ def xxx(y):
     else:
           return y[0] + xxx(y[1:])
 print(xxx("wwwooorrrlllddd"))
+
+
+
+
+
+
+def show_info(name, role):
+    print(f"name: {name}\nrole: {role}")
+
+
+show_info('mohamed', 'master')
+print('=' * 50)
+
+
+def multiply(n1, n2):
+    return n1 * n2
+
+
+print(multiply(6, 7))
+print('=' * 50)
+
+
+def welcome(name):
+    print(f"hello {name}!")
+
+
+welcome('mohamed')
+print('=' * 50)
+
+
+def show_names(*names):
+    for name in names:
+        print(name)
+
+
+show_names('gggg', 'ggggggggggg', 'ffffffffff')
+print('=' * 50)
+
+
+names = ['lllll', 'kkkkk', 'qqqqqq']
+
+
+def introduce(n1, n2, n3):
+    print(n1)
+    print(n2)
+    print(n3)
+
+
+introduce(*names)
+print('=' * 60)
+
+
+def greet(name='guest'):
+    print(f'Hello {name}')
+
+
+greet()
+greet('mohamed')
+print('=' * 50)
+
+
+def show_skills(**skills):
+    for skill, score in skills.items():
+        print(f'{skill}: {score}')
+
+
+show_skills(js=60, php=70, go=80)
+
+
+message1 = 'global'
+
+
+def f1():
+    message2 = 'internal'
+    print(f'the message is: {message2}')
+
+
+def f2():
+    message3 = 'external'
+    print(f'the message is: {message3}')
+
+
+f1()
+f2()
+print(f'the global message is: {message1}')
+print('=' * 50)
+
+
+def countdown(n):
+    for number in range(n, 0, -1):
+        print(number)
+
+
+countdown(10)
+print('=' * 50)
+
+
+square = lambda x: x * x
+print(square(5))
+
+print('end.')
