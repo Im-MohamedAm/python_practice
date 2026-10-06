@@ -70,3 +70,12 @@ def message(a,b,c){
 print (f'{message(a)}')
 print (f'{message(a)}')
 print (f'{message(a)}')
+
+print ('=' * 50)
+
+def task(*names,**skills):
+ for name in names:
+   print(f'hi {name} your skills are:') 
+   for skill in skills:
+      print(f'#{skill} => {skills[skill]}')
+ task('moh','ff','ffffff',python=20,php=50)
