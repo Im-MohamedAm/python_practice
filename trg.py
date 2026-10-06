@@ -79,3 +79,16 @@ def task(*names,**skills):
    for skill in skills:
       print(f'#{skill} => {skills[skill]}')
  task('moh','ff','ffffff',python=20,php=50)
+
+print ('=' * 50)
+
+
+def xxx(y):
+    if len(y) == 1:
+        return y
+    if y[0] == y[1]: #wwwoorrrlldd
+       
+        return xxx(y[1:])
+    else:
+          return y[0] + xxx(y[1:])
+print(xxx("wwwooorrrlllddd"))
